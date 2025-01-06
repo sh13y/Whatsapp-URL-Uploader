@@ -1,0 +1,24 @@
+{
+  "name": "whatsapp-url-uploader",
+  "version": "1.0.0",
+  "description": "WhatsApp bot for uploading files via URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh13y/Whatsapp-URL-Uploader.git"
+  },
+  "keywords": [
+    "WhatsappBot",
+    "NodeJS",
+    "BaileysAPI"
+  ],
+  "author": "shiey",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/sh13y/Whatsapp-URL-Uploader/issues"
+  },
+  "homepage": "https://github.com/sh13y/Whatsapp-URL-Uploader#readme"
+}
