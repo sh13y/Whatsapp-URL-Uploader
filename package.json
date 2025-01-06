@@ -1,32 +1,27 @@
 {
   "name": "whatsapp-url-uploader",
   "version": "1.0.0",
-  "description": "WhatsApp bot for uploading files via URL",
+  "description": "A project to upload media files using the WWebJS API",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sh13y/Whatsapp-URL-Uploader.git"
   },
   "keywords": [
-    "WhatsappBot",
-    "NodeJS",
-    "BaileysAPI"
+    "whatsapp-bot"
   ],
   "author": "shiey",
-  "license": "WTFPL",
+  "license": "WTFPL ",
   "bugs": {
     "url": "https://github.com/sh13y/Whatsapp-URL-Uploader/issues"
   },
   "homepage": "https://github.com/sh13y/Whatsapp-URL-Uploader#readme",
   "dependencies": {
-    "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^6.7.9",
-    "qrcode-terminal": "^0.12.0"
-  },
-  "devDependencies": {
-    "@types/open": "^6.1.0"
+    "punycode": "^2.3.1",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.23.0"
   }
 }
