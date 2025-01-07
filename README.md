@@ -111,4 +111,10 @@ Contributions are welcome! If you encounter issues or have ideas for improvement
 - **Baileys** for providing the foundation to interact with WhatsApp.
 - **mime-types** for MIME type detection.
 
+## Screenshots
+Here are some screenshots to give you an idea of how the tool works:
+
+![Screenshot 1](samples/Image%202025-01-07%20at%2019.48.36.jpeg)
+![Screenshot 2](C:/Users/shiey/Documents/Code/Whatsapp%20URL%20Uploader/samples/Image%202025-01-07%20at%2019.48.36.jpeg)
+
 Happy uploading! 🚀
