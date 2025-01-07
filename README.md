@@ -56,18 +56,18 @@ npm start
 After starting the application, use the command:
 
 ```bash
-!upload <URL>
+upload <URL>
 ```
 
 ### Example:
 ```bash
-!upload https://example.com/sample-image.jpg
+upload https://example.com/sample-image.jpg
 ```
 
 To upload multiple URLs sequentially, just list them one after another:
 
 ```bash
-!u2g https://example.com/file1.jpg
+u2g https://example.com/file1.jpg
 https://example.com/file2.mp4
 https://example.com/file3.pdf
 ```
@@ -75,9 +75,9 @@ https://example.com/file3.pdf
 The tool will process and upload each URL in the order provided. It’s like magic! 🪄
 
 ### Bot Commands
-- **`!on`**: Turn the bot on. (If it’s already on, it will let you know.)
-- **`!off`**: Turn the bot off. (If it’s already off, it will let you know.)
-- **`!alive`**: Check if the bot is alive. (Spoiler: It will tell you it is!)
+- **`on`**: Turn the bot on. (If it’s already on, it will let you know.)
+- **`off`**: Turn the bot off. (If it’s already off, it will let you know.)
+- **`alive`**: Check if the bot is alive. (Spoiler: It will tell you it is!)
 
 ## Supported MIME Types
 The following file types are supported:
