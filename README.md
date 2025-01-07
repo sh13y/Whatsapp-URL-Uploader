@@ -1,6 +1,6 @@
-# WhatsApp URL Bulk Uploader
+# WhatsApp URL Uploader
 
-Welcome to the WhatsApp URL Bulk Uploader! 🎉 This nifty tool lets you share a bunch of URLs (like videos, images, documents, etc.) to WhatsApp groups using the Baileys library. It’s like having your own personal WhatsApp butler!
+Welcome to the WhatsApp URL Uploader! 🎉 This nifty tool lets you share a bunch of URLs (like videos, images, documents, etc.) to WhatsApp groups using the Baileys library. It’s like having your own personal WhatsApp butler!
 
 ## Features
 - 📤 Upload and share multiple URLs to specified WhatsApp groups in sequential order.
