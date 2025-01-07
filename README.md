@@ -115,6 +115,6 @@ Contributions are welcome! If you encounter issues or have ideas for improvement
 Here are some screenshots to give you an idea of how the tool works:
 
 ![Screenshot 1](samples/Image%202025-01-07%20at%2019.48.36.jpeg)
-![Screenshot 2](samples/Image%202025-01-07%20at%2019.48.36.jpeg)
+![Screenshot 2](samples/Image%202025-01-07%20at%2019.48.37.jpeg)
 
 Happy uploading! 🚀
