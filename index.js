@@ -1,1 +1,288 @@
-function _0x15a9(){const _0x4ecc80=['keys','imageMessage','join','error','stringify','ephemeralMessage','SHYZUKI','buttonsResponseMessage','remoteJid','Bot\x20is\x20turned\x20off.\x20Ignoring\x20command...','BROWSER_TYPE','[Template\x20Button\x20Reply:\x20','status@broadcast','selectedRowId','messageTimestamp','mentionedJid','Received\x20command:\x20','close','*Yeahh.\x20I\x27m\x20Alive\x20😇*','Error\x20sending\x20to\x20group\x20','templateButtonReplyMessage','BROWSER_NAME','text','@whiskeysockets/baileys','Message\x20ID:\x20','fatal','39848TjUruj','videoMessage','fileName','143314kncula','statusCode','application/pdf','then','@g.us','[List\x20Response:\x20','File\x20:\x20','BROWSER_VERSION','3.0','370zSzWWS','message','Connected\x20to\x20WhatsApp!','[Video:\x20','Content:\x20','pop','split','dotenv','Error\x20uploading\x20file:','stickerMessage','extendedTextMessage','Error\x20handling\x20message:','log',',\x20MIME\x20Type:\x20','application/vnd.rar','1306782ZZeNls','mtype','toLowerCase','endsWith','connection.update','chat','groupMetadata','[Sticker\x20Message]','image','Timestamp:\x20','off','env','18828cSwHca','caption','pino','[Image:\x20','466260ZUvcxg','BAE5','fromMe','lookup','File\x20successfully\x20uploaded:\x20','slice','Processing\x20URL:\x20','contextInfo','Bot\x20is\x20already\x20ON!','catch','Logged\x20out.\x20Restart\x20the\x20script\x20to\x20reconnect.','Connection\x20closed.\x20Should\x20reconnect:\x20','forEach','participant','listResponseMessage','isBaileys','mime-types','Please\x20provide\x20a\x20valid\x20URL\x20link.','upload','Sending\x20to\x20group:','sendMessage','documentMessage','63xQCTSS','476235SnTHKU','trim','conversation','loggedOut','alive','Unsupported\x20message\x20type','output','creds.update','toLocaleString','Bot\x20is\x20now\x20OFF!','messages.upsert','messages','isGroup','audioMessage','singleSelectReply','m.chat:','798038ujwMhI','======================================','startsWith','No\x20caption','map','[Document:\x20','Failed\x20to\x20start:','No\x20content','application/zip','key','Is\x20from\x20me:\x20','open','audio','video','Bot\x20is\x20already\x20OFF!','length','*File\x20:\x20','user'];_0x15a9=function(){return _0x4ecc80;};return _0x15a9();}const _0xffa948=_0x37ae;(function(_0x3c9c60,_0x50eb31){const _0x13daa0=_0x37ae,_0x2037da=_0x3c9c60();while(!![]){try{const _0x348192=parseInt(_0x13daa0(0x127))/0x1+parseInt(_0x13daa0(0xf8))/0x2+-parseInt(_0x13daa0(0x166))/0x3+parseInt(_0x13daa0(0x14b))/0x4*(-parseInt(_0x13daa0(0x130))/0x5)+parseInt(_0x13daa0(0x14f))/0x6+parseInt(_0x13daa0(0x165))/0x7*(-parseInt(_0x13daa0(0x124))/0x8)+parseInt(_0x13daa0(0x13f))/0x9;if(_0x348192===_0x50eb31)break;else _0x2037da['push'](_0x2037da['shift']());}catch(_0x3d5c6b){_0x2037da['push'](_0x2037da['shift']());}}}(_0x15a9,0x34165));const {default:makeWASocket,useMultiFileAuthState,DisconnectReason}=require(_0xffa948(0x121)),pino=require(_0xffa948(0x14d)),{Boom}=require('@hapi/boom');require(_0xffa948(0x137))['config']();function _0x37ae(_0x58d1e2,_0x2c1771){const _0x15a978=_0x15a9();return _0x37ae=function(_0x37aefe,_0x274eb7){_0x37aefe=_0x37aefe-0xf0;let _0x46faf7=_0x15a978[_0x37aefe];return _0x46faf7;},_0x37ae(_0x58d1e2,_0x2c1771);}function smsg(_0x1bf5a1,_0xfae080){const _0x363b14=_0xffa948;if(!_0xfae080)return _0xfae080;const _0x2b8001=Object[_0x363b14(0x10a)](_0xfae080[_0x363b14(0x131)])[0x0];return _0xfae080['id']=_0xfae080['key']['id'],_0xfae080[_0x363b14(0x15e)]=_0xfae080[_0x363b14(0x101)]['id'][_0x363b14(0xfa)](_0x363b14(0x150))&&_0xfae080[_0x363b14(0x101)]['id'][_0x363b14(0x107)]===0x10,_0xfae080[_0x363b14(0x144)]=_0xfae080['key'][_0x363b14(0x112)],_0xfae080[_0x363b14(0x151)]=_0xfae080['key']['fromMe'],_0xfae080[_0x363b14(0xf4)]=_0xfae080['chat'][_0x363b14(0x142)](_0x363b14(0x12b)),_0xfae080['sender']=_0xfae080['fromMe']?_0x1bf5a1[_0x363b14(0x109)]['id']:_0xfae080[_0x363b14(0xf4)]?_0xfae080[_0x363b14(0x101)][_0x363b14(0x15c)]:_0xfae080[_0x363b14(0x101)]['remoteJid'],_0xfae080[_0x363b14(0x140)]=_0x2b8001,_0xfae080[_0x363b14(0x120)]=_0xfae080[_0x363b14(0x131)][_0x363b14(0x168)]||_0xfae080[_0x363b14(0x131)][_0x2b8001]?.[_0x363b14(0x14c)]||_0xfae080['message'][_0x2b8001]?.['text']||'',_0xfae080[_0x363b14(0x119)]=_0xfae080['message'][_0x2b8001]?.[_0x363b14(0x156)]?.[_0x363b14(0x119)]||[],_0xfae080;}function extractMessageContent(_0x1bfd61){const _0x3e63b4=_0xffa948,_0x5bcfe0=_0x1bfd61[_0x3e63b4(0x131)];if(!_0x5bcfe0)return _0x3e63b4(0xff);if(_0x5bcfe0[_0x3e63b4(0x168)])return _0x5bcfe0['conversation'];if(_0x5bcfe0[_0x3e63b4(0x10b)])return _0x3e63b4(0x14e)+(_0x5bcfe0[_0x3e63b4(0x10b)][_0x3e63b4(0x14c)]||_0x3e63b4(0xfb))+']';if(_0x5bcfe0[_0x3e63b4(0x125)])return _0x3e63b4(0x133)+(_0x5bcfe0['videoMessage'][_0x3e63b4(0x14c)]||'No\x20caption')+']';if(_0x5bcfe0[_0x3e63b4(0x164)])return _0x3e63b4(0xfd)+(_0x5bcfe0[_0x3e63b4(0x164)][_0x3e63b4(0x126)]||'Unnamed')+']';if(_0x5bcfe0[_0x3e63b4(0xf5)])return'[Audio\x20Message]';if(_0x5bcfe0[_0x3e63b4(0x139)])return _0x3e63b4(0x146);if(_0x5bcfe0[_0x3e63b4(0x13a)])return _0x5bcfe0[_0x3e63b4(0x13a)][_0x3e63b4(0x120)];if(_0x5bcfe0[_0x3e63b4(0x111)])return'[Button\x20Response:\x20'+_0x5bcfe0[_0x3e63b4(0x111)]['selectedButtonId']+']';if(_0x5bcfe0[_0x3e63b4(0x15d)])return _0x3e63b4(0x12c)+_0x5bcfe0[_0x3e63b4(0x15d)][_0x3e63b4(0xf6)][_0x3e63b4(0x117)]+']';if(_0x5bcfe0[_0x3e63b4(0x11e)])return _0x3e63b4(0x115)+_0x5bcfe0[_0x3e63b4(0x11e)]['selectedId']+']';return _0x3e63b4(0x16b);}async function startSHYZUKI(){const _0x4ce789=_0xffa948,{state:_0xe1cc2a,saveCreds:_0x2fd4df}=await useMultiFileAuthState(process[_0x4ce789(0x14a)]['AUTH_PATH']),_0x310a39=makeWASocket({'logger':pino({'level':_0x4ce789(0x123)}),'auth':_0xe1cc2a,'printQRInTerminal':!![],'browser':[process[_0x4ce789(0x14a)][_0x4ce789(0x11f)]||_0x4ce789(0x110),process[_0x4ce789(0x14a)][_0x4ce789(0x114)]||'Safari',process[_0x4ce789(0x14a)][_0x4ce789(0x12e)]||_0x4ce789(0x12f)]});_0x310a39['ev']['on'](_0x4ce789(0x143),_0x32cecb=>{const _0x47e370=_0x4ce789,{connection:_0x4c4e28,lastDisconnect:_0x1a6c99}=_0x32cecb;if(_0x4c4e28===_0x47e370(0x11b)){const _0x35569d=_0x1a6c99?.[_0x47e370(0x10d)]instanceof Boom&&_0x1a6c99[_0x47e370(0x10d)][_0x47e370(0x16c)]?.[_0x47e370(0x128)]!==DisconnectReason[_0x47e370(0x169)];console[_0x47e370(0x13c)](_0x47e370(0x15a)+_0x35569d),_0x35569d?startSHYZUKI():console['log'](_0x47e370(0x159));}else _0x4c4e28===_0x47e370(0x103)&&console['log'](_0x47e370(0x132));}),_0x310a39['ev']['on'](_0x4ce789(0x16d),_0x2fd4df),_0x310a39['ev']['on'](_0x4ce789(0xf2),async _0xa27b91=>{const _0x5b6f06=_0x4ce789;try{const _0x946af4=_0xa27b91['messages'];_0x946af4[_0x5b6f06(0x15b)](_0xccc0c5=>{const _0xd59912=_0x5b6f06,_0x153588=_0xccc0c5[_0xd59912(0x101)]['id'],_0x14cf28=_0xccc0c5[_0xd59912(0x101)][_0xd59912(0x112)],_0x37e397=_0xccc0c5['key'][_0xd59912(0x15c)]||'N/A',_0x23c107=_0xccc0c5[_0xd59912(0x101)][_0xd59912(0x151)],_0x349c6e=extractMessageContent(_0xccc0c5),_0x10bd08=_0xccc0c5[_0xd59912(0x118)]||'Unknown';console[_0xd59912(0x13c)](_0xd59912(0xf9)),console['log'](_0xd59912(0x122)+_0x153588),console[_0xd59912(0x13c)]('From:\x20'+_0x14cf28),console[_0xd59912(0x13c)]('To:\x20'+_0x37e397),console['log'](_0xd59912(0x102)+_0x23c107),console[_0xd59912(0x13c)](_0xd59912(0x134)+_0x349c6e),console[_0xd59912(0x13c)](_0xd59912(0x148)+new Date(_0x10bd08*0x3e8)[_0xd59912(0xf0)]()),console[_0xd59912(0x13c)]('======================================');});}catch(_0x14f3e3){console['error'](_0x5b6f06(0x13b),_0x14f3e3);}});let _0x523399=!![];_0x310a39['ev']['on'](_0x4ce789(0xf2),async _0x2b94cb=>{const _0x44ad5f=_0x4ce789;try{const _0xa3c5bd=_0x2b94cb[_0x44ad5f(0xf3)][0x0];if(!_0xa3c5bd[_0x44ad5f(0x131)])return;_0xa3c5bd[_0x44ad5f(0x131)]=Object[_0x44ad5f(0x10a)](_0xa3c5bd[_0x44ad5f(0x131)])[0x0]===_0x44ad5f(0x10f)?_0xa3c5bd['message'][_0x44ad5f(0x10f)][_0x44ad5f(0x131)]:_0xa3c5bd['message'];if(_0xa3c5bd[_0x44ad5f(0x101)]&&_0xa3c5bd[_0x44ad5f(0x101)][_0x44ad5f(0x112)]===_0x44ad5f(0x116))return;const _0x158259=smsg(_0x310a39,_0xa3c5bd),_0x52f687=_0x158259[_0x44ad5f(0x140)]==='conversation'?_0x158259['message'][_0x44ad5f(0x168)]:_0x158259[_0x44ad5f(0x131)][_0x158259[_0x44ad5f(0x140)]]?.[_0x44ad5f(0x14c)]||_0x158259['message'][_0x158259[_0x44ad5f(0x140)]]?.[_0x44ad5f(0x120)]||'',_0x41014c=_0x52f687[_0x44ad5f(0x154)]()[_0x44ad5f(0x167)]()[_0x44ad5f(0x136)]('\x20')[0x0][_0x44ad5f(0x141)](),_0x1789b3=_0x52f687[_0x44ad5f(0x167)]()[_0x44ad5f(0x136)]('\x20')[_0x44ad5f(0x154)](0x1),_0x226d51=_0x1789b3[_0x44ad5f(0x10c)]('\x20'),_0x8437f3=_0x158259[_0x44ad5f(0xf4)]?await _0x310a39[_0x44ad5f(0x145)](_0x158259['chat'])[_0x44ad5f(0x12a)](_0x114580=>_0x114580['participants']):[],_0x4cf760=_0x158259['isGroup']?_0x8437f3[_0x44ad5f(0xfc)](_0x43fe4d=>_0x43fe4d['id']):[];console[_0x44ad5f(0x13c)](_0x44ad5f(0x11a)+_0x41014c);if(!_0x523399&&_0x41014c!=='on'){console['log'](_0x44ad5f(0x113));return;}switch(_0x41014c){case'on':_0x523399?await _0x310a39[_0x44ad5f(0x163)](_0x158259[_0x44ad5f(0x144)],{'text':_0x44ad5f(0x157)}):(_0x523399=!![],await _0x310a39['sendMessage'](_0x158259[_0x44ad5f(0x144)],{'text':'Bot\x20is\x20now\x20ON!'}));break;case _0x44ad5f(0x149):!_0x523399?await _0x310a39[_0x44ad5f(0x163)](_0x158259[_0x44ad5f(0x144)],{'text':_0x44ad5f(0x106)}):(_0x523399=![],await _0x310a39[_0x44ad5f(0x163)](_0x158259['chat'],{'text':_0x44ad5f(0xf1)}));break;case _0x44ad5f(0x16a):await _0x310a39[_0x44ad5f(0x163)](_0x158259[_0x44ad5f(0x144)],{'text':_0x44ad5f(0x11c),'mentions':_0x4cf760});break;case _0x44ad5f(0x161):if(!_0x226d51)return _0x310a39[_0x44ad5f(0x163)](_0x158259[_0x44ad5f(0x144)],{'text':_0x44ad5f(0x160)},{'quoted':_0x158259});const _0x12793d=_0x226d51['trim']()[_0x44ad5f(0x136)]('\x0a'),_0x18df31=process[_0x44ad5f(0x14a)]['GROUP_IDS'][_0x44ad5f(0x136)](',');console[_0x44ad5f(0x13c)](_0x44ad5f(0xf7),_0x158259[_0x44ad5f(0x144)]),console['log']('Group\x20IDs:',_0x18df31);try{for(const _0x22be55 of _0x12793d){const _0x36dd9d=decodeURIComponent(_0x22be55[_0x44ad5f(0x167)]()),_0x4f3945=_0x36dd9d[_0x44ad5f(0x136)]('/')['pop'](),_0x1bf023=require(_0x44ad5f(0x15f)),_0x3c65b2=_0x1bf023[_0x44ad5f(0x152)](_0x4f3945);console[_0x44ad5f(0x13c)](_0x44ad5f(0x155)+_0x36dd9d+_0x44ad5f(0x13d)+_0x3c65b2);for(const _0x3e7538 of _0x18df31){console[_0x44ad5f(0x13c)](_0x44ad5f(0x162),_0x3e7538);try{if(_0x3c65b2[_0x44ad5f(0xfa)](_0x44ad5f(0x147)))await _0x310a39[_0x44ad5f(0x163)](_0x3e7538,{'image':{'url':_0x36dd9d},'caption':_0x44ad5f(0x12d)+_0x4f3945});else{if(_0x3c65b2[_0x44ad5f(0xfa)]('video/x-matroska'))await _0x310a39['sendMessage'](_0x3e7538,{'video':{'url':_0x36dd9d},'caption':_0x44ad5f(0x12d)+_0x4f3945});else{if(_0x3c65b2[_0x44ad5f(0xfa)](_0x44ad5f(0x105)))await _0x310a39[_0x44ad5f(0x163)](_0x3e7538,{'video':{'url':_0x36dd9d},'caption':_0x44ad5f(0x12d)+_0x4f3945});else{if(_0x3c65b2[_0x44ad5f(0xfa)](_0x44ad5f(0x104)))await _0x310a39[_0x44ad5f(0x163)](_0x3e7538,{'audio':{'url':_0x36dd9d},'mimetype':_0x3c65b2,'caption':'File\x20:\x20'+_0x4f3945});else{if(_0x3c65b2===_0x44ad5f(0x129))await _0x310a39[_0x44ad5f(0x163)](_0x3e7538,{'document':{'url':_0x36dd9d},'mimetype':_0x3c65b2,'caption':_0x44ad5f(0x12d)+_0x4f3945});else{if(_0x3c65b2===_0x44ad5f(0x13e))await _0x310a39[_0x44ad5f(0x163)](_0x3e7538,{'document':{'url':_0x36dd9d},'mimetype':_0x3c65b2,'caption':_0x44ad5f(0x12d)+_0x4f3945});else{if(_0x3c65b2===_0x44ad5f(0x100)){const _0x11dda5=_0x36dd9d['split']('/')[_0x44ad5f(0x135)]();await _0x310a39[_0x44ad5f(0x163)](_0x3e7538,{'document':{'url':_0x36dd9d},'mimetype':_0x3c65b2,'caption':_0x44ad5f(0x108)+_0x11dda5+'*'});}else await _0x310a39[_0x44ad5f(0x163)](_0x3e7538,{'text':'Unsupported\x20file\x20type:\x20'+(_0x3c65b2||'Unknown')});}}}}}}}catch(_0x48181b){console[_0x44ad5f(0x10d)](_0x44ad5f(0x11d)+_0x3e7538+':',_0x48181b),await _0x310a39[_0x44ad5f(0x163)](_0x158259[_0x44ad5f(0x144)],{'text':'Failed\x20to\x20upload\x20the\x20file\x20to\x20group\x20'+_0x3e7538+'.\x20Error:\x20'+(_0x48181b[_0x44ad5f(0x131)]||JSON[_0x44ad5f(0x10e)](_0x48181b))});}}await _0x310a39[_0x44ad5f(0x163)](_0x158259[_0x44ad5f(0x144)],{'text':_0x44ad5f(0x153)+_0x4f3945});}}catch(_0x445651){console[_0x44ad5f(0x10d)](_0x44ad5f(0x138),_0x445651),await _0x310a39[_0x44ad5f(0x163)](_0x158259[_0x44ad5f(0x144)],{'text':'Failed\x20to\x20upload\x20the\x20file.\x20Error:\x20'+(_0x445651[_0x44ad5f(0x131)]||JSON[_0x44ad5f(0x10e)](_0x445651))});}break;}}catch(_0x582dc7){console[_0x44ad5f(0x10d)]('Error\x20handling\x20message:',_0x582dc7);}});}startSHYZUKI()[_0xffa948(0x158)](_0x5d2a5b=>{const _0x3807e7=_0xffa948;console[_0x3807e7(0x10d)](_0x3807e7(0xfe),_0x5d2a5b);});
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require("@whiskeysockets/baileys");
+const pino = require("pino");
+const { Boom } = require("@hapi/boom");
+
+// Helper function to format and simplify messages
+function smsg(SHYZUKI, mek) {
+    if (!mek) return mek;
+    const mtype = Object.keys(mek.message)[0];
+    mek.id = mek.key.id;
+    mek.isBaileys = mek.key.id.startsWith("BAE5") && mek.key.id.length === 16;
+    mek.chat = mek.key.remoteJid;
+    mek.fromMe = mek.key.fromMe;
+    mek.isGroup = mek.chat.endsWith("@g.us");
+    mek.sender = mek.fromMe
+        ? SHYZUKI.user.id
+        : mek.isGroup
+        ? mek.key.participant
+        : mek.key.remoteJid;
+    mek.mtype = mtype;
+    mek.text =
+        mek.message.conversation ||
+        mek.message[mtype]?.caption ||
+        mek.message[mtype]?.text ||
+        "";
+    mek.mentionedJid = mek.message[mtype]?.contextInfo?.mentionedJid || [];
+    return mek;
+}
+
+// Helper function to extract message content
+function extractMessageContent(message) {
+    const msg = message.message;
+
+    if (!msg) return "No content";
+
+    if (msg.conversation) return msg.conversation;
+    if (msg.imageMessage) return `[Image: ${msg.imageMessage.caption || "No caption"}]`;
+    if (msg.videoMessage) return `[Video: ${msg.videoMessage.caption || "No caption"}]`;
+    if (msg.documentMessage) return `[Document: ${msg.documentMessage.fileName || "Unnamed"}]`;
+    if (msg.audioMessage) return `[Audio Message]`;
+    if (msg.stickerMessage) return `[Sticker Message]`;
+    if (msg.extendedTextMessage) return msg.extendedTextMessage.text;
+    if (msg.buttonsResponseMessage) return `[Button Response: ${msg.buttonsResponseMessage.selectedButtonId}]`;
+    if (msg.listResponseMessage) return `[List Response: ${msg.listResponseMessage.singleSelectReply.selectedRowId}]`;
+    if (msg.templateButtonReplyMessage)
+        return `[Template Button Reply: ${msg.templateButtonReplyMessage.selectedId}]`;
+
+    return "Unsupported message type";
+}
+
+// Main function to start the bot
+async function startSHYZUKI() {
+    const { state, saveCreds } = await useMultiFileAuthState("auth_info");
+
+    const SHYZUKI = makeWASocket({
+        logger: pino({ level: "fatal" }),
+        auth: state,
+        printQRInTerminal: true,
+        browser: ["SHYZUKI ", "Safari", "3.0"],
+    });
+
+    // Handle connection updates
+    SHYZUKI.ev.on("connection.update", (update) => {
+        const { connection, lastDisconnect } = update;
+
+        if (connection === "close") {
+            const shouldReconnect =
+                lastDisconnect?.error instanceof Boom &&
+                lastDisconnect.error.output?.statusCode !== DisconnectReason.loggedOut;
+
+            console.log(`Connection closed. Should reconnect: ${shouldReconnect}`);
+            if (shouldReconnect) {
+                startSHYZUKI();
+            } else {
+                console.log("Logged out. Restart the script to reconnect.");
+            }
+        } else if (connection === "open") {
+            console.log("Connected to WhatsApp!");
+        }
+    });
+
+    // Save authentication state
+    SHYZUKI.ev.on("creds.update", saveCreds);
+
+    // Listen for incoming messages and log their metadata
+    SHYZUKI.ev.on("messages.upsert", async (chatUpdate) => {
+        try {
+            const messages = chatUpdate.messages;
+
+            messages.forEach((message) => {
+                // Extract metadata
+                const msgId = message.key.id; // Message ID
+                const from = message.key.remoteJid; // Sender or group ID
+                const to = message.key.participant || "N/A"; // Message participant (for groups)
+                const isFromMe = message.key.fromMe; // Is this sent by the bot?
+                const content = extractMessageContent(message); // Extract content
+                const timestamp = message.messageTimestamp || "Unknown"; // Timestamp
+
+                // Log the message details
+                console.log("======================================");
+                console.log(`Message ID: ${msgId}`);
+                console.log(`From: ${from}`);
+                console.log(`To: ${to}`);
+                console.log(`Is from me: ${isFromMe}`);
+                console.log(`Content: ${content}`);
+                console.log(`Timestamp: ${new Date(timestamp * 1000).toLocaleString()}`);
+                console.log("======================================");
+            });
+        } catch (err) {
+            console.error("Error handling message:", err);
+        }
+    });
+
+    // Command handling (Example: u2g command)
+    // Global bot status variable
+let botStatus = true; // true = bot is ON, false = bot is OFF
+
+SHYZUKI.ev.on("messages.upsert", async (chatUpdate) => {
+    try {
+        const mek = chatUpdate.messages[0];
+        if (!mek.message) return;
+
+        mek.message =
+            Object.keys(mek.message)[0] === "ephemeralMessage"
+                ? mek.message.ephemeralMessage.message
+                : mek.message;
+
+        if (mek.key && mek.key.remoteJid === "status@broadcast") return;
+
+        const m = smsg(SHYZUKI, mek);
+        const body =
+            m.mtype === "conversation"
+                ? m.message.conversation                : m.message[m.mtype]?.caption || m.message[m.mtype]?.text || "";
+        const command = body.trim().split(" ")[0].toLowerCase();
+        const args = body.trim().split(" ").slice(1);
+        const text = args.join(" ");
+        const participants = m.isGroup
+            ? await SHYZUKI.groupMetadata(m.chat).then((metadata) => metadata.participants)
+            : [];
+        const mentions = m.isGroup ? participants.map((a) => a.id) : [];
+
+        console.log(`Received command: ${command}`); // Debugging
+
+        // Bot status handling
+        if (!botStatus && command !== "on") {
+            console.log("Bot is turned off. Ignoring command...");
+            return;
+        }
+
+        // Command handling
+        switch (command) {
+            case "on":
+                if (botStatus) {
+                    await SHYZUKI.sendMessage(m.chat, { text: "Bot is already ON!" });
+                } else {
+                    botStatus = true;
+                    await SHYZUKI.sendMessage(m.chat, { text: "Bot is now ON!" });
+                }
+                break;
+
+            case "help":
+                const commandList = [
+                    "*🤖 Available Commands:*\n",
+                    "*on* - Turn the bot ON",
+                    "*off* - Turn the bot OFF",
+                    "*alive* - Check if bot is running",
+                    "*u2g* - Upload files to groups from URL",
+                    "  Usage: u2g [URL]\n  Supports: Images, Videos, Audio, PDF, RAR files",
+                    "*help* - Show this help message"
+                ].join("\n");
+
+                await SHYZUKI.sendMessage(m.chat, {
+                    text: commandList,
+                    mentions: mentions
+                });
+                break;
+
+            case "off":
+                if (!botStatus) {
+                    await SHYZUKI.sendMessage(m.chat, { text: "Bot is already OFF!" });
+                } else {
+                    botStatus = false;
+                    await SHYZUKI.sendMessage(m.chat, { text: "Bot is now OFF!" });
+                }
+                break;
+
+            case "alive":
+                await SHYZUKI.sendMessage(m.chat, {
+                    text: "*Yeahh. I'm Alive 😇*",
+                    mentions: mentions,
+                });
+                break;
+
+                case "u2g":
+                    if (!text) {
+                        return SHYZUKI.sendMessage(
+                            m.chat,
+                            { text: "Please provide a valid URL link." },
+                            { quoted: m }
+                        );
+                    }
+                
+                    const urls = text.trim().split("\n");
+                    const groupIds = process.env.GROUP_IDS.split(","); // Read from environment variable
+                
+                    try {
+                        // Loop through each URL provided in the text
+                        for (const url of urls) {
+                            const decodedUrl = decodeURIComponent(url.trim());
+                            const fileName = decodedUrl.split("/").pop();
+                
+                            // Detect MIME type dynamically
+                            const mime = require("mime-types");
+                            const mimeType = mime.lookup(fileName); // e.g., 'image/jpeg', 'video/mp4', etc.
+                
+                            // Iterate through all group IDs
+                            for (const groupId of groupIds) {
+                                if (mimeType.startsWith("image")) {
+                                    // Send image
+                                    await SHYZUKI.sendMessage(groupId, {
+                                        image: { url: decodedUrl },
+                                        caption: `Uploaded File: ${fileName}`,
+                                    });
+                                } else if (mimeType.startsWith("video/x-matroska,")) {
+                                    // Send video
+                                    await SHYZUKI.sendMessage(groupId, {
+                                        video: { url: decodedUrl },
+                                        caption: `Uploaded File: ${fileName}`,
+                                    });
+                                } else if (mimeType.startsWith("video")) {
+                                    // Send video
+                                    await SHYZUKI.sendMessage(groupId, {
+                                        video: { url: decodedUrl },
+                                        caption: `Uploaded File: ${fileName}`,
+                                    });
+                                } else if (mimeType.startsWith("audio")) {
+                                    // Send audio
+                                    await SHYZUKI.sendMessage(groupId, {
+                                        audio: { url: decodedUrl },
+                                        mimetype: mimeType, // Provide MIME type explicitly
+                                    });
+                                } else if (mimeType === "application/pdf") {
+                                    // Send PDF document
+                                    await SHYZUKI.sendMessage(groupId, {
+                                        document: { url: decodedUrl },
+                                        fileName: fileName,
+                                        mimetype: mimeType,
+                                    });
+                                } else if (mimeType === "application/vnd.rar") {
+                                    // Send RAR file (added MIME type for .rar)
+                                    await SHYZUKI.sendMessage(groupId, {
+                                        document: { url: decodedUrl },
+                                        fileName: fileName,
+                                        mimetype: mimeType,
+                                    });
+                                } else {
+                                    // Unsupported type
+                                    await SHYZUKI.sendMessage(groupId, {
+                                        text: `Unsupported file type: ${mimeType || "Unknown"}`,
+                                    });
+                                }
+                            }
+                
+                            // Confirm upload success for each file
+                            await SHYZUKI.sendMessage(m.chat, {
+                                text: `File successfully uploaded : ${fileName}`,
+                            });
+                        }
+                    } catch (err) {
+                        console.error("Error uploading file:", err);
+                        await SHYZUKI.sendMessage(m.chat, {
+                            text: "Failed to upload the file. Please check the URL and try again.",
+                        });
+                    }
+                    break;                                               
+                
+        }
+    } catch (err) {
+        console.error("Error handling message:", err);
+    }
+});
+    
+}
+
+// Start the bot
+startSHYZUKI().catch((err) => {
+    console.error("Failed to start:", err);
+});
+
