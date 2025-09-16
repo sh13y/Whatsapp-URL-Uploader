@@ -1,6 +1,10 @@
-const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require("@whiskeysockets/baileys");
-const pino = require("pino");
-const { Boom } = require("@hapi/boom");
+import dotenv from "dotenv";
+dotenv.config();
+import makeWASocket, { useMultiFileAuthState, DisconnectReason } from "@whiskeysockets/baileys";
+import pino from "pino";
+import { Boom } from "@hapi/boom";
+import mime from "mime-types";
+import qrcode from "qrcode-terminal";
 
 // Helper function to format and simplify messages
 function smsg(SHYZUKI, mek) {
@@ -62,7 +66,6 @@ async function startSHYZUKI() {
         const { connection, lastDisconnect, qr } = update;
         if (qr) {
             // Print QR code to terminal using 'qrcode-terminal' package
-            const qrcode = require('qrcode-terminal');
             qrcode.generate(qr, { small: true });
         }
         if (connection === "close") {
@@ -202,6 +205,10 @@ SHYZUKI.ev.on("messages.upsert", async (chatUpdate) => {
                     }
                 
                     const urls = text.trim().split("\n");
+                    if (!process.env.GROUP_IDS) {
+                        await SHYZUKI.sendMessage(m.chat, { text: "GROUP_IDS environment variable is not set." });
+                        return;
+                    }
                     const groupIds = process.env.GROUP_IDS.split(","); // Read from environment variable
                 
                     try {
@@ -211,51 +218,30 @@ SHYZUKI.ev.on("messages.upsert", async (chatUpdate) => {
                             const fileName = decodedUrl.split("/").pop();
                 
                             // Detect MIME type dynamically
-                            const mime = require("mime-types");
-                            const mimeType = mime.lookup(fileName); // e.g., 'image/jpeg', 'video/mp4', etc.
-                
-                            // Iterate through all group IDs
+                            const mimeType = mime.lookup(fileName);
                             for (const groupId of groupIds) {
-                                if (mimeType.startsWith("image")) {
-                                    // Send image
+                                if (["image/jpeg","image/png","image/gif"].includes(mimeType)) {
                                     await SHYZUKI.sendMessage(groupId, {
                                         image: { url: decodedUrl },
                                         caption: `Uploaded File: ${fileName}`,
                                     });
-                                } else if (mimeType.startsWith("video/x-matroska,")) {
-                                    // Send video
+                                } else if (["video/mp4","video/x-matroska"].includes(mimeType)) {
                                     await SHYZUKI.sendMessage(groupId, {
                                         video: { url: decodedUrl },
                                         caption: `Uploaded File: ${fileName}`,
                                     });
-                                } else if (mimeType.startsWith("video")) {
-                                    // Send video
-                                    await SHYZUKI.sendMessage(groupId, {
-                                        video: { url: decodedUrl },
-                                        caption: `Uploaded File: ${fileName}`,
-                                    });
-                                } else if (mimeType.startsWith("audio")) {
-                                    // Send audio
+                                } else if (["audio/mpeg","audio/ogg"].includes(mimeType)) {
                                     await SHYZUKI.sendMessage(groupId, {
                                         audio: { url: decodedUrl },
-                                        mimetype: mimeType, // Provide MIME type explicitly
-                                    });
-                                } else if (mimeType === "application/pdf") {
-                                    // Send PDF document
-                                    await SHYZUKI.sendMessage(groupId, {
-                                        document: { url: decodedUrl },
-                                        fileName: fileName,
                                         mimetype: mimeType,
                                     });
-                                } else if (mimeType === "application/vnd.rar") {
-                                    // Send RAR file (added MIME type for .rar)
+                                } else if (["application/pdf","application/zip","application/x-rar-compressed","application/vnd.rar"].includes(mimeType)) {
                                     await SHYZUKI.sendMessage(groupId, {
                                         document: { url: decodedUrl },
                                         fileName: fileName,
                                         mimetype: mimeType,
                                     });
                                 } else {
-                                    // Unsupported type
                                     await SHYZUKI.sendMessage(groupId, {
                                         text: `Unsupported file type: ${mimeType || "Unknown"}`,
                                     });

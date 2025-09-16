@@ -1,4 +1,5 @@
 {
+    "type": "module",
     "name": "whatsapp-url-uploader",
     "version": "1.0.0",
     "description": "WhatsApp bot for uploading files via URL",
