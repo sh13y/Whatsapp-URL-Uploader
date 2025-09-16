@@ -4,6 +4,7 @@ auth_info/
 node_modules/
 npm-debug.log
 yarn-error.log
+auth_info
 
 # Logs
 logs/

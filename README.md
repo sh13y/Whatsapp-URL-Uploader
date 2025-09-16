@@ -95,7 +95,21 @@ If an unsupported MIME type is detected, the tool will politely let you know.
 - **Error Handling:** Some URLs may fail to upload due to invalid links, unsupported MIME types, or WhatsApp server issues.
 
 ## Disclaimer
-This project is intended for personal and educational purposes only. Do not use this tool for spamming, violating privacy, or sharing copyrighted content without permission. The developer of this project are not responsible for any misuse or violations of WhatsApp’s terms of service. Use responsibly and ensure compliance with applicable laws and regulations.
+This project is intended for educational and personal use only. Please be aware of the following:
+
+- **Educational Purpose**: This tool is developed solely for learning and understanding WhatsApp Web API integration using the Baileys library.
+- **Unofficial API**: This project uses Baileys, an unofficial WhatsApp Web API. It is not affiliated with or endorsed by WhatsApp Inc.
+- **Terms of Service**: Using unofficial APIs may violate WhatsApp's Terms of Service. For production or business use, please consider using the official WhatsApp Business API.
+- **No Warranty**: This software is provided "as is", without warranty of any kind. The developers are not responsible for any consequences resulting from its use.
+- **Responsible Usage**: Users must:
+  - Respect WhatsApp's policies and guidelines
+  - Obtain consent before adding the bot to any group
+  - Not use the tool for spam or harassment
+  - Comply with local laws and regulations regarding automated messaging
+  - Not use for commercial purposes without proper authorization
+- **Data Privacy**: Users are responsible for protecting any personal data processed through this tool and ensuring compliance with applicable privacy laws (GDPR, CCPA, etc.).
+
+By using this tool, you acknowledge these limitations and agree to use it responsibly. The developers disclaim any liability for misuse or violations of WhatsApp's terms of service.
 
 ## License
 This project is licensed under the WTFPL License. See the LICENSE file for details.
@@ -108,7 +122,11 @@ Contributions are welcome! If you encounter issues or have ideas for improvement
 3. Submit a pull request.
 
 ## Acknowledgments
-- **Baileys** for providing the foundation to interact with WhatsApp.
+This project is powered by [Baileys](https://github.com/WhiskeySockets/Baileys), an amazing WhatsApp Web API library for Node.js. Special thanks to:
+- [**adiwajshing**](https://github.com/adiwajshing) - The original author of Baileys
+- [**WhiskeySockets**](https://github.com/WhiskeySockets) - Current maintainers of the Baileys library
+
+Their incredible work makes this WhatsApp URL Uploader possible!
 - **mime-types** for MIME type detection.
 
 ## Screenshots
@@ -118,3 +136,7 @@ Here are some screenshots to give you an idea of how the tool works:
 ![Screenshot 2](samples/Image%202025-01-07%20at%2019.48.37.jpeg)
 
 Happy uploading! 🚀
+
+---
+
+Made with ❤️ in Ceylon 🇱🇰 by [sh13y](https://github.com/sh13y)
