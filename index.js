@@ -215,8 +215,7 @@ SHYZUKI.ev.on("messages.upsert", async (chatUpdate) => {
                         // Loop through each URL provided in the text
                         for (const url of urls) {
                             const decodedUrl = decodeURIComponent(url.trim());
-                            const fileName = decodedUrl.split("/").pop();
-                
+                            const fileName = decodedUrl.split("/").pop().split("?")[0];
                             // Detect MIME type dynamically
                             const mimeType = mime.lookup(fileName);
                             for (const groupId of groupIds) {
